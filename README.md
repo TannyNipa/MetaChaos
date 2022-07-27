@@ -26,4 +26,5 @@ Please [input the fasta files of short or long reads] [the output files (.csv) f
   fasta files of the predicted clusters
   2D t-SNE points
   5-mer feature vector
+  
 Authors: Nipaporn Thipmanee (nipaporn.t@student.chula.ac.th), Chidchanok Lursinsap (lchidcha@gmail.com), and Jeerayut Chaijaruwanich (mr.jeerayut@gmail.com)
