@@ -19,7 +19,7 @@ Please [input the fasta files of short or long reads] [the output files (.csv) f
 	Run MetaChaos on simulated datasets:
 	$ ./run_MetaChaos.sh /usr/local/MATLAB/R2022a /home/admin1/MetaChaos/ S1_1.fna S1_2.fna S1_1.fna.groups.csv S1_2.fna.groups.csv 1
 	$ ./run_MetaChaos.sh /usr/local/MATLAB/R2022a /home/admin1/MetaChaos/ L1_1.fna L1_2.fna L1_1.fna.groups.csv L1_2.fna.groups.csv 1
-	$ ./run_MetaChaos.sh /usr/local/MATLAB/R2022a /home/admin1/MetaChaos/ R1.fna [] R2.fna.groups.csv [] 1
+	$ ./run_MetaChaos.sh /usr/local/MATLAB/R2022a /home/admin1/MetaChaos/ R1.fna [] R2.fna.groups.csv [] 2
 
 =Output=
   fasta files of the predicted clusters
