@@ -10,7 +10,7 @@ $ run_MetaChaos.sh
 Please [input the fasta files of short or long reads] [the output files (.csv) from MetaProbS algorithm] [options]
 
 	$ Options:
-		$ types		: types of data set: 1 stands for a short reads data set, 2 stands for scaffold reads.
+	$ types		: types of data set: 1 stands for a short reads data set, 2 stands for scaffold reads.
 				
 	
 	$ Usage:
