@@ -23,6 +23,7 @@ Please [input the fasta files of short or long reads] [the output files (.csv) f
 	$ ./run_MetaChaos.sh /usr/local/MATLAB/R2022a /home/admin1/MetaChaos/ R1.fna [] R2.fna.groups.csv [] 2
 
 =Output=
+
   fasta files of the predicted clusters
   2D t-SNE points
   5-mer feature vector
