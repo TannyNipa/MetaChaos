@@ -6,6 +6,7 @@ The metagenomics clustering method name MetaChaos was proposed. The two concepts
 =Run MetaChaos=
 
 $ run_MetaChaos.sh
+
 Please [input the fasta files of short or long reads] [the output files (.csv) from MetaProbS algorithm] [options]
 
 	$ Options:
