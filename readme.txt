@@ -1,102 +1,27 @@
-MetaChaos Executable
+This Repository Contains the Software for MetaChaos (The manuscript is prepare for submitting to the Journal of Computational Biology)
 
-1. Prerequisites for Deployment 
+The metagenomics clustering method name ChaosMeta was proposed. The two concepts for identifying the number of species were introduced. The first concept employs feature extraction of vectors of overlapping reads groups by using Chaos Game Representation. Feature vectors embedded in high-dimensional are reduced into low-dimensional by using t-SNE. Then, the second concept is the clustering process all of t-SNE scatter points using the modified k-nearest neighbor algorithm whose the number of k nearest neighbors is defined in terms of change-point.
 
-Verify that version 9.12 (R2022a) of the MATLAB Runtime is installed.   
-If not, you can run the MATLAB Runtime installer.
-To find its location, enter
-  
-    >>mcrinstaller
-      
-at the MATLAB prompt.
+=Run MetaChaos=
 
-Alternatively, download and install the Linux version of the MATLAB Runtime for R2022a 
-from the following link on the MathWorks website:
+$ run_MetaChaos.sh
+Please [input the fasta files of short or long reads] [the output files (.csv) from MetaProbS algorithm] [options]
 
-    https://www.mathworks.com/products/compiler/mcr/index.html
-   
-For more information about the MATLAB Runtime and the MATLAB Runtime installer, see 
-"Distribute Applications" in the MATLAB Compiler documentation  
-in the MathWorks Documentation Center.
+	$ Options:
+		$ types		: types of data set: 1 stands for a short reads data set, 2 stands for scaffold reads.
+				
+	
+	$ Usage:
+	./run_MetaChaos.sh  LD_LIBRARY_PATH [fasta files] [output file of MetaProbS] [types] [perplexity] [percentile] 
+	
+For example,
+Run MetaChaos on simulated datasets:
+$ ./run_MetaChaos.sh /usr/local/MATLAB/R2022a /home/admin1/MetaChaos/ S1_1.fna S1_2.fna S1_1.fna.groups.csv S1_2.fna.groups.csv 1
+$ ./run_MetaChaos.sh /usr/local/MATLAB/R2022a /home/admin1/MetaChaos/ L1_1.fna L1_2.fna L1_1.fna.groups.csv L1_2.fna.groups.csv 1
+$ ./run_MetaChaos.sh /usr/local/MATLAB/R2022a /home/admin1/MetaChaos/ R1.fna [] R2.fna.groups.csv [] 1
 
-2. Files to Deploy and Package
-
-Files to Package for Standalone 
-================================
--MetaChaos 
--run_MetaChaos.sh (shell script for temporarily setting environment variables and 
-                   executing the application)
-   -to run the shell script, type
-   
-       ./run_MetaChaos.sh <mcr_directory> <argument_list>
-       
-    at Linux or Mac command prompt. <mcr_directory> is the directory 
-    where version 9.12 of the MATLAB Runtime is installed or the directory where 
-    MATLAB is installed on the machine. <argument_list> is all the 
-    arguments you want to pass to your application. For example, 
-
-    If you have version 9.12 of the MATLAB Runtime installed in 
-    /mathworks/home/application/v912, run the shell script as:
-    
-       ./run_MetaChaos.sh /mathworks/home/application/v912
-       
-    If you have MATLAB installed in /mathworks/devel/application/matlab, 
-    run the shell script as:
-    
-       ./run_MetaChaos.sh /mathworks/devel/application/matlab
--MCRInstaller.zip
-    Note: if end users are unable to download the MATLAB Runtime using the
-    instructions in the previous section, include it when building your 
-    component by clicking the "Runtime included in package" link in the
-    Deployment Tool.
--This readme file 
-
-
-
-3. Definitions
-
-For information on deployment terminology, go to
-https://www.mathworks.com/help and select MATLAB Compiler >
-Getting Started > About Application Deployment >
-Deployment Product Terms in the MathWorks Documentation
-Center.
-
-4. Appendix 
-
-A. Linux systems:
-In the following directions, replace MR/v912 by the directory on the target machine where 
-   MATLAB is installed, or MR by the directory where the MATLAB Runtime is installed.
-
-(1) Set the environment variable XAPPLRESDIR to this value:
-
-MR/v912/X11/app-defaults
-
-
-(2) If the environment variable LD_LIBRARY_PATH is undefined, set it to the following:
-
-MR/v912/runtime/glnxa64:MR/v912/bin/glnxa64:MR/v912/sys/os/glnxa64:MR/v912/sys/opengl/lib/glnxa64
-
-If it is defined, set it to the following:
-
-${LD_LIBRARY_PATH}:MR/v912/runtime/glnxa64:MR/v912/bin/glnxa64:MR/v912/sys/os/glnxa64:MR/v912/sys/opengl/lib/glnxa64
-
-    For more detailed information about setting the MATLAB Runtime paths, see Package and 
-   Distribute in the MATLAB Compiler documentation in the MathWorks Documentation Center.
-
-
-     
-        NOTE: To make these changes persistent after logout on Linux 
-              or Mac machines, modify the .cshrc file to include this  
-              setenv command.
-        NOTE: The environment variable syntax utilizes forward 
-              slashes (/), delimited by colons (:).  
-        NOTE: When deploying standalone applications, you can
-              run the shell script file run_MetaChaos.sh 
-              instead of setting environment variables. See 
-              section 2 "Files to Deploy and Package".    
-
-
-
-
-
-
+  $Output:
+  fasta files of the predicted clusters
+  2D t-SNE points
+  5-mer feature vector
+Authors: Nipaporn Thipmanee (nipaporn.t@student.chula.ac.th), Chidchanok Lursinsap (lchidcha@gmail.com), and Jeerayut Chaijaruwanich (mr.jeerayut@gmail.com)
