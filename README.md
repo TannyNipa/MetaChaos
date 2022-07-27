@@ -1,7 +1,7 @@
 # MetaChaos
-This Repository Contains the Software for MetaChaos **(The manuscript is prepare for submitting to the Journal of Computational Biology)
+This Repository Contains the Software for MetaChaos **(The manuscript is prepared for submitting to the Journal of Computational Biology)
 
-The metagenomics clustering method name ChaosMeta was proposed. The two concepts for identifying the number of species were introduced. The first concept employs feature extraction of vectors of overlapping reads groups by using Chaos Game Representation. Feature vectors embedded in high-dimensional are reduced into low-dimensional by using t-SNE. Then, the second concept is the clustering process all of t-SNE scatter points using the modified k-nearest neighbor algorithm whose the number of k nearest neighbors is defined in terms of change-point.
+The metagenomics clustering method name MetaChaos was proposed. The two concepts for identifying the number of species were introduced. The first concept employs feature extraction of vectors of overlapping reads groups by using Chaos Game Representation. Feature vectors embedded in high-dimensional are reduced into low-dimensional by using t-SNE. Then, the second concept is the clustering process all of t-SNE scatter points using the modified k-nearest neighbor algorithm whose the number of k nearest neighbors is defined in terms of change-point.
 
 =Run MetaChaos=
 
