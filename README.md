@@ -10,17 +10,17 @@ $ run_MetaChaos.sh
 Please [input the fasta files of short or long reads] [the output files (.csv) from MetaProbS algorithm] [options]
 
 	$ Options:
-	$ types		: types of data set: 1 stands for a short reads data set, 2 stands for scaffold reads.
+	$ types		: types of data set: 1 stands for a short reads datasets, 2 stands for long reads datasets.
 				
 	
 	$ Usage:
-	./run_MetaChaos.sh  LD_LIBRARY_PATH [fasta files] [output file of MetaProbS] [types] [perplexity] [percentile] 
+	./run_MetaChaos.sh  LD_LIBRARY_PATH [types] [fasta files] [MetaProbS output files] 
 	
 	For example,
 	Run MetaChaos on simulated datasets:
-	$ ./run_MetaChaos.sh /usr/local/MATLAB/R2022a /home/admin1/MetaChaos/ S1_1.fna S1_2.fna S1_1.fna.groups.csv S1_2.fna.groups.csv 1
-	$ ./run_MetaChaos.sh /usr/local/MATLAB/R2022a /home/admin1/MetaChaos/ L1_1.fna L1_2.fna L1_1.fna.groups.csv L1_2.fna.groups.csv 1
-	$ ./run_MetaChaos.sh /usr/local/MATLAB/R2022a /home/admin1/MetaChaos/ R1.fna [] R2.fna.groups.csv [] 2
+	$ ./run_MetaChaos.sh /usr/local/MATLAB/R2022a /home/admin1/MetaChaos/ 1 S1_1.fna S1_2.fna S1_1.fna.groups.csv S1_2.fna.groups.csv 
+	$ ./run_MetaChaos.sh /usr/local/MATLAB/R2022a /home/admin1/MetaChaos/ 1 L1_1.fna L1_2.fna L1_1.fna.groups.csv L1_2.fna.groups.csv 
+	$ ./run_MetaChaos.sh /usr/local/MATLAB/R2022a /home/admin1/MetaChaos/ 2 R1.fna [] R2.fna.groups.csv [] 
 
 =Output=
 
