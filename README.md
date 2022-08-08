@@ -24,8 +24,10 @@ Please [input the fasta files of short or long reads] [the output files (.csv) f
 
 =Output=
 
-  fasta files of the predicted clusters
+  fasta files of the predicted clusters (Bin_Merge_0x.fa)
+  
   2D t-SNE points
+  
   5-mer feature vector
   
 Authors: Nipaporn Thipmanee (nipaporn.t@student.chula.ac.th), Chidchanok Lursinsap (lchidcha@gmail.com), and Jeerayut Chaijaruwanich (mr.jeerayut@gmail.com)
