@@ -24,7 +24,7 @@ Please [input the fasta files of short or long reads] [the output files (.csv) f
 
 =Output=
 
-  fasta files of the predicted clusters (Bin_Merge_0x.fa)
+  fasta files of the predicted clusters (Bin_Merge_xx.fa)
   
   2D t-SNE points
   
