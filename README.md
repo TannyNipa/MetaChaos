@@ -30,4 +30,10 @@ Please [input the fasta files of short or long reads] [the output files (.csv) f
   
   5-mer feature vector
   
+  number of k nearest neighbors
+  
+  predicted class01, predicted class02 (Class before merging)
+  
+  Running time and memory usage
+  
 Authors: Nipaporn Thipmanee (nipaporn.t@student.chula.ac.th), Chidchanok Lursinsap (lchidcha@gmail.com), and Jeerayut Chaijaruwanich (mr.jeerayut@gmail.com)
